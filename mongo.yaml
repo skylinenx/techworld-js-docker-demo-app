@@ -1,7 +1,7 @@
 version: '3'
 services:
   myapp:
-    image: 391363380726.dkr.ecr.us-west-2.amazonaws.com/my-app:1.0
+    image: 391363380726.dkr.ecr.us-west-2.amazonaws.com/my-app:1.1
     depends_on:
       - mongodb
     ports:
