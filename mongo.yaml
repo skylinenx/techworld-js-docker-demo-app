@@ -2,6 +2,8 @@ version: '3'
 services:
   myapp:
     image: 391363380726.dkr.ecr.us-west-2.amazonaws.com/my-app:1.0
+    depends_on:
+      - mongodb
     ports:
       - 3003:3000
   mongodb:
@@ -13,6 +15,8 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=pass
   mongoui:
     image: mongo-express
+    depends_on:
+      - mongodb
     ports:
       - 8082:8081
     environment:
