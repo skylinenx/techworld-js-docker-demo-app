@@ -5,7 +5,7 @@ services:
     depends_on:
       - mongodb
     ports:
-      - 3003:3000
+      - 3000:3000
   mongodb:
     image: mongo
     ports:
